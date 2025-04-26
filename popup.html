@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NewsContrast</title>
+<!-- Load marked.js locally (ensure marked.min.js is in the extension root, alongside popup.html) -->
+<script src="./marked.min.js"></script>></script>
+  <style>
+    body { font-family: sans-serif; width: 300px; padding: 10px; }
+    #status { margin-bottom: 10px; font-style: italic; }
+    #output { max-height: 400px; overflow-y: auto; }
+  </style>
+</head>
+<body>
+  <div id="current">Processing: <span id="urlDisplay"></span></div>
+  <div id="status">Status: <span id="processing">Idle</span></div>
+  <hr>
+  <div id="output"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
